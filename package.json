@@ -1,0 +1,19 @@
+{
+  "name": "crawl_sis",
+  "version": "1.0.0",
+  "description": "Crawl data from sis.hust.edu.vn",
+  "main": "index.js",
+  "dependencies": {
+    "selenium-webdriver": "^3.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "crawl",
+    "selenium"
+  ],
+  "author": "trivu",
+  "license": "ISC"
+}
