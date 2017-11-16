@@ -19,7 +19,7 @@ exports.getStudentsById = function (start, end) {
         await el.sendKeys(index + '\n');
         await el.sendKeys(webdriver.Key.ENTER);
         await driver.wait(function() {
-          return driver.wait(until.elementLocated(By.css('#MainContent_gvStudents_DXDataRow0 td')), 500)
+          return driver.wait(until.elementLocated(By.css('#MainContent_gvStudents_DXDataRow0 td')), 1000)
           .then(function() {
             return driver.findElement(By.css('#MainContent_gvStudents_DXDataRow0 td'))
             .then(ele => ele.getText().then(txt => { return txt == index}))
